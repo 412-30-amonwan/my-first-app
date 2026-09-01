@@ -76,7 +76,7 @@ ans1 = st.text_input(
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
+    "ข้อ 2: Cats love to eat `f_s h`. 🐟",
     value=st.session_state.ans2_val,
 )
 
@@ -84,7 +84,20 @@ ans2 = st.text_input(
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
 
-# ✏️ [พื้นที่สำหรับนักเรียน]: เพิ่มข้อ 3, 4 ตรงนี้
+)
+ans3 = st.text_input(
+    "ข้อ 3: They're `p_n` writing . 🖊️ ",
+    value=st.session_state.ans1_val,
+)
+ans4 = st.text_input(
+    "ข้อ 4: We use `l__t_p`. 💻 ",
+    value=st.session_state.ans2_val,
+)
+
+# อัปเดตค่าล่าสุดเข้าตัวแปร
+st.session_state.ans1_val = ans3
+st.session_state.ans2_val = ans4
+
 
 
 # 4. ปุ่มส่งคำตอบ
@@ -99,6 +112,7 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
 # 5. แสดง Dialog ผลลัพธ์
 if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2)
+    show_result_dialog(ans3, ans4)
 
 st.divider()
 st.write("นางสาวอมลวรรณ ปัญญาเจริญ เลขที่ 30 ม.4/12")
