@@ -83,7 +83,6 @@ ans2 = st.text_input(
 # อัปเดตค่าล่าสุดเข้าตัวแปร
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
-
 )
 ans3 = st.text_input(
     "ข้อ 3: They're `p_n` writing . 🖊️ ",
