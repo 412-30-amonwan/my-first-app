@@ -107,7 +107,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: Everyone needs to use it `b _ _ k`. 📚",
+    "ข้อ 4: Everyone needs to use it `b _ _ ks`. 📚",
     value=st.session_state.ans4_val,
 )
 
