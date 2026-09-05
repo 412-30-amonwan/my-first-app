@@ -103,7 +103,7 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: I have an `o _ _ a n g e ` every morning. 🍊",
+    "ข้อ 3: I have an `o _ _ n g e ` every morning. 🍊",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
